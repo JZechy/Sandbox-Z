@@ -6,3 +6,4 @@ temp/*
 vendor
 !vendor/.htaccess
 config.local.neon
+composer.lock

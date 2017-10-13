@@ -1,0 +1,19 @@
+# Example configuration file of local environment
+
+parameters:
+	connection:
+		driver: mysqli
+		host: localhost
+		username: root
+		password: ""
+		database: test
+		connectionTz: auto-offset
+	appspace: "sandbox-z"
+
+services:
+	security.userStorage:
+		setup:
+			- setNamespace(%appspace%)
+	nette.mailer:
+		class: Nette\Mail\IMailer
+		factory: Nextras\MailPanel\FileMailer(%tempDir%/mail-panel-mails)

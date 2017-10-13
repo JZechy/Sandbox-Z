@@ -1,0 +1,42 @@
+# Default project configuration
+
+extensions:
+	translation: Kdyby\Translation\DI\TranslationExtension
+	console: Kdyby\Console\DI\ConsoleExtension
+	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
+	orm: Nextras\Orm\Bridges\NetteDI\OrmExtension
+
+translation:
+	default: cs
+	fallback: [cs]
+
+migrations:
+	dir: %appDir%/../migrations
+	driver: mysql
+	dbal: nextras
+
+orm:
+	model: App\Model\Orm
+
+php:
+	date.timezone: Europe/Prague
+
+application:
+	mapping:
+		*: App\*Module\Presenter\*Presenter
+
+session:
+	expiration: 7 days
+
+tracy:
+	bar:
+		- Nextras\Dbal\Bridges\NetteTracy\ConnectionPanel
+		- Nextras\MailPanel\MailPanel(%tempDir%/mail-panel-latte)
+
+services:
+	router: App\RouterFactory::createRouter
+	- Nette\Caching\Cache
+	- Nextras\Dbal\Connection(%connection%)
+
+includes:
+	- ../modules/front/config.neon
