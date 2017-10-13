@@ -1,0 +1,8 @@
+.idea
+log/*
+!log/.htaccess
+temp/*
+!temp/.htaccess
+vendor
+!vendor/.htaccess
+config.local.neon
