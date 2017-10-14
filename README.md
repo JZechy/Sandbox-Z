@@ -1,4 +1,9 @@
 # Sandbox-Z
+
+[![Latest stable](https://img.shields.io/packagist/v/jzechy/sandbox-z.svg?style=flat-square)](https://packagist.org/packages/jzechy/sandbox-z)
+[![license](https://img.shields.io/github/license/jzechy/sandbox-z.svg?maxAge=2592000&style=flat-square)](https://github.com/JZechy/Sandbox-Z/blob/master/LICENSE)
+[![Downloads Total](https://img.shields.io/packagist/dt/jzechy/sandbox-z.svg?style=flat-square)](https://packagist.org/packages/jzechy/sandbox-z)
+
 Pre-configured PHP7.1 Nette sandbox.
 
 ## Using
