@@ -23,7 +23,7 @@
 	"require-dev": {
 		"nette/tester": "^v2.0.0"
 	},
-	"suggests": {
+	"suggest": {
 		"nextras/datagrid": "Easy to use nette datagrid component.",
 		"jzechy/nette-antispam": "Protect your forms using CSS and JS.",
 		"jzechy/jquery-fileupload": "Handle your file uploads with jQuery uploader."
