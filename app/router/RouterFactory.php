@@ -8,7 +8,10 @@ use Nette\Application\Routers\RouteList;
 use Nette\StaticClass;
 
 /**
- * Class RouterFactory
+ * Default router factory.
+ * Contains two posible router:
+ * - module/presenter/action for any module.
+ * - presenter/action for front module.
  *
  * @author  Zechy <email@zechy.cz>
  * @package App

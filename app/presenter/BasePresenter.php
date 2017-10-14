@@ -17,10 +17,12 @@ use Tracy\Debugger;
  */
 abstract class BasePresenter extends Presenter {
 	
-	/** @var Translator @inject Translator. */
+	/** @var Translator @inject Instacnce of Kdyby Translator. */
 	public $translator;
 	
 	/**
+	 * Translates given resource.
+	 *
 	 * @param string      $message
 	 * @param int|null    $count
 	 * @param array       $parameters
@@ -33,8 +35,11 @@ abstract class BasePresenter extends Presenter {
 	}
 	
 	/**
-	 * @param \Exception $e
-	 * @param string     $message
+	 * Catch thrown exception. If in production mode, exception is logged and flash message is shown.
+	 * If in debug mode, the exception is thrown to the screen.
+	 *
+	 * @param \Exception $e Catched exception.
+	 * @param string     $message Custom message for user.
 	 * @throws \Exception
 	 */
 	public function catchException(\Exception $e, string $message = "global.error.common"): void {

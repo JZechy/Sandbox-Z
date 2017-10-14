@@ -1,6 +1,7 @@
 {
 	"name": "jzechy/sandbox-z",
 	"description": "Pre-configured PHP7 Nette sandbox.",
+	"type": "project",
 	"homepage": "https://github.com/JZechy/Sandbox-Z",
 	"license": "MIT",
 	"authors": [

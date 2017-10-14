@@ -5,7 +5,7 @@ namespace App\Model;
 use Nextras\Orm\Model\Model;
 
 /**
- * Class Orm
+ * Nextras ORM Model class for storing repositories.
  *
  * @author  Zechy <email@zechy.cz>
  * @package App\Model

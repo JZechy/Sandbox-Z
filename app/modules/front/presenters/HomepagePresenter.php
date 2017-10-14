@@ -5,7 +5,7 @@ namespace App\FrontModule\Presenter;
 use App\Presenter\BasePresenter;
 
 /**
- * Class HomepagePresenter
+ * Default HomepagePresenter.
  *
  * @author  Zechy <email@zechy.cz>
  * @package App\FrontModule\Presenter
