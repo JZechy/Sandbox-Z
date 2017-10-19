@@ -13,13 +13,17 @@ composer create-project jzechy/sandbox-z
 
 ## Composer dependencies
 Sandbox have pre-configured and ready this packages:
-* **nette\nette** Nette Framework Metta package.
-* **kdyby\translation** Translation extension.
-* **kdyby\console** Implementation of Symfony console.
-* **nextras\mail-panel** Capturing emails into Tracy Debugger bar.
-* **nextras\orm** Database ORM extension.
-* **nextras\migrations** Database migrations.
-* **nette\tester** PHP unit testing. Dev dependency.
+* **nette/nette** Nette Framework Metta package.
+* **kdyby/translation** Translation extension.
+* **kdyby/console** Implementation of Symfony console.
+* **nextras/mail-panel** Capturing emails into Tracy Debugger bar.
+* **nextras/orm** Database ORM extension.
+* **nextras/migrations** Database migrations.
+* **nette/tester** PHP unit testing. Dev dependency.
+
+## Composer projects
+Composer helpful project, installed after Sandbox-Z composer installation.
+* **nette\code-checker** A simple tool to check source code against a set of Nette coding standards.
 
 ## Structure
 * **components** Folder for common components.
@@ -36,3 +40,7 @@ Sandbox have pre-configured and ready this packages:
 * **Form** Base class for form components.
 * **Orm** Nextras ORM model class fo repositories.
 * **RouterFactory** Default routing class.
+
+## BIN files
+* **code.bat** File to run code-checker for all files in app folder.
+* **console.bat** File to run Kdyby\Console.
