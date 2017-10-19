@@ -3,7 +3,8 @@ log/*
 !log/.htaccess
 temp/*
 !temp/.htaccess
-vendor
+/vendor
 !vendor/.htaccess
 config.local.neon
 composer.lock
+bin/code-checker

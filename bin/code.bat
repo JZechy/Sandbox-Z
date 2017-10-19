@@ -1,0 +1,1 @@
+php code-checker/code-checker -d ../app -f --short-arrays --strict-types

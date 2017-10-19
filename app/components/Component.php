@@ -14,7 +14,7 @@ use Nette\Security\User;
  * @package App\Components
  */
 abstract class Component extends Control {
-	
+
 	/**
 	 * Method for accessing BasePresenter.
 	 *
@@ -24,17 +24,17 @@ abstract class Component extends Control {
 	public function getPresenter($throw = true): BasePresenter {
 		/** @var BasePresenter $presenter */
 		$presenter = parent::getPresenter($throw);
-		
+
 		return $presenter;
 	}
-	
+
 	/**
 	 * @return User
 	 */
 	public function getUser(): User {
 		return $this->getPresenter()->getUser();
 	}
-	
+
 	/**
 	 * Translates given resource.
 	 *
@@ -48,19 +48,19 @@ abstract class Component extends Control {
 	public function t(string $message, ?int $count = null, array $parameters = [], ?string $domain = null, ?string $locale = null): string {
 		return $this->getPresenter()->t($message, $count, $parameters, $domain, $locale);
 	}
-	
+
 	/**
 	 * Catch thrown exception. If in production mode, exception is logged and flash message is shown.
 	 * If in debug mode, the exception is thrown to the screen.
 	 *
-	 * @param \Exception $e Catched exception.
+	 * @param \Exception $e       Catched exception.
 	 * @param string     $message Custom message for user.
 	 * @throws \Exception
 	 */
 	public function catchException(\Exception $e, string $message = "global.error.common"): void {
 		$this->getPresenter()->catchException($e, $message);
 	}
-	
+
 	/**
 	 * Render component.
 	 */

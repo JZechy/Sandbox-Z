@@ -16,10 +16,10 @@ use Tracy\Debugger;
  * @property-read ITemplate|\stdClass $template
  */
 abstract class BasePresenter extends Presenter {
-	
+
 	/** @var Translator @inject Instacnce of Kdyby Translator. */
 	public $translator;
-	
+
 	/**
 	 * Translates given resource.
 	 *
@@ -33,12 +33,12 @@ abstract class BasePresenter extends Presenter {
 	public function t(string $message, ?int $count = null, array $parameters = [], ?string $domain = null, ?string $locale = null): string {
 		return $this->translator->translate($message, $count, $parameters, $domain, $locale);
 	}
-	
+
 	/**
 	 * Catch thrown exception. If in production mode, exception is logged and flash message is shown.
 	 * If in debug mode, the exception is thrown to the screen.
 	 *
-	 * @param \Exception $e Catched exception.
+	 * @param \Exception $e       Catched exception.
 	 * @param string     $message Custom message for user.
 	 * @throws \Exception
 	 */

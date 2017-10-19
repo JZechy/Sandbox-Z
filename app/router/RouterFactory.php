@@ -19,27 +19,27 @@ use Nette\StaticClass;
 final class RouterFactory {
 
 	use StaticClass;
-	
+
 	/**
 	 * @return IRouter
 	 */
 	public static function createRouter(): IRouter {
 		$router = new RouteList();
-		
+
 		$router[] = new Route('<presenter>/<action>[/<id>]', [
 			"module" => "Front",
 			"presenter" => "Homepage",
 			"action" => "default",
 			"id" => null
 		]);
-		
+
 		$router[] = new Route('<module>/<presenter>/<action>[/<id>]', [
 			"module" => "Front",
 			"presenter" => "Homepage",
 			"action" => "default",
 			"id" => null
 		]);
-		
+
 		return $router;
 	}
 }

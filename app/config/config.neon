@@ -1,4 +1,23 @@
-# Default project configuration
+#
+# Default project configuration. This file setup cofiguration of application and its extensions.
+#
+# extensions:
+#  translation: Kdyby\Translation extension
+#  console: Kdyby\Console extension
+#  migrations: Nextras\Migrations extension
+#  orm: Nextras\Orm extension
+#
+# translation: Default configuration for Kdyby\Transaltion. Czech lanaguage is used for default
+#  and for fallback.
+# migrations: Configuration for Migrations, where SQL scripts are stored and which DB driver to use.
+# orm: Configuration for Nextras\ORM, setting up ORM Model class.
+# php:
+# application:
+# session:
+# tracy: Setting up Nextras\Dbal panel and Nextras\MailPanel
+# services: Register of base services.
+# includes: Include of other configuration files.
+#
 
 extensions:
 	translation: Kdyby\Translation\DI\TranslationExtension

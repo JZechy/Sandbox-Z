@@ -1,4 +1,14 @@
-# Example configuration file of local environment
+#
+# Example configuration file of local environment. This file configures local
+# environemnt of application - database and mail service.
+#
+# parameters:
+#	connection: Connection information for Nextras\Dbal.
+#	appspace: Application namespace for session separation.
+# services:
+#	security.userStorate: Application of appspace parameter.
+#	nette.mailer: Implementation of mailer service. In development Nextras MailPanel is used by default.
+#
 
 parameters:
 	connection:

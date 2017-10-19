@@ -1,2 +1,6 @@
+#
+# Global example file of Kdyby\Translation. Resource for translate will be annotated global.error.common.
+#
+
 error:
 	common: "Při zpracování se vyskytla chyba."

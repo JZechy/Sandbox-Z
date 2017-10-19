@@ -1,6 +1,6 @@
 {
 	"name": "jzechy/sandbox-z",
-	"description": "Pre-configured PHP7 Nette sandbox.",
+	"description": "Pre-configured PHP7.1 Nette sandbox.",
 	"type": "project",
 	"homepage": "https://github.com/JZechy/Sandbox-Z",
 	"license": "MIT",
@@ -27,5 +27,9 @@
 		"nextras/datagrid": "Easy to use nette datagrid component.",
 		"jzechy/nette-antispam": "Protect your forms using CSS and JS.",
 		"jzechy/jquery-fileupload": "Handle your file uploads with jQuery uploader."
+	},
+	"scripts": {
+		"post-create-project-cmd": "composer create-project nette/code-checker bin/code-checker",
+		"code-check": "php bin/code-checker/code-checker -d app -f --short-arrays --strict-types"
 	}
 }
