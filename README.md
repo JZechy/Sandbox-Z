@@ -23,7 +23,7 @@ Sandbox have pre-configured and ready this packages:
 
 ## Composer projects
 Composer helpful project, installed after Sandbox-Z composer installation.
-* **nette\code-checker** A simple tool to check source code against a set of Nette coding standards.
+* **nette/code-checker** A simple tool to check source code against a set of Nette coding standards.
 
 ## Structure
 * **components** Folder for common components.
